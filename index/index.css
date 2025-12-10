@@ -1,0 +1,33 @@
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; 
+    background-color: #b85cb0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05); 
+} 
+

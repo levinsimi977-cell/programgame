@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffccff; 
+    font-family: cursive ;
+}
+h1{
+    margin: 20px 0;
+    text-align: center; }
+.timer {
+    margin: 10px 0;
+    position: relative; /* מיקום יחסי לביצוע התאמות */
+    top: -20px; /* הזזת הטיימר כלפי מעלה */
+}
+.difficulty-selection {
+    margin: 20px 0; /* רווח בין הרמות */
+    position: relative; /* מיקום יחסי לביצוע התאמות */
+    top: -20px; 
+}
+.p{
+    font-family: cursive ;
+    font-size: large;;
+}
+
+.difficulty-btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff66b2; /* צבע רקע לכפתור */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0; /* רווח בין הכפתורים */
+}
+
+.difficulty-btn:hover {
+    background-color: #ff3399; /* צבע hover */
+}
+
+.game-area {
+    display: flex;
+    justify-content: center; /* ממרכז את העיגולים */
+    margin-top: 40px; /* רווח בין קושי לעיגולים */
+    width: 100%;
+    top: -70px; 
+    position: relative;
+}
+
+#circle1, #circle2 {
+    position: relative; /* Add this */
+    width: 450px; 
+    height: 450px; 
+    background-color: white; 
+    border-radius: 50%;
+    animation: spin 6s linear infinite; 
+    border: 2px solid black;}
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+.button {
+    position: absolute; /* מיקום אבסולוטי בתוך העיגול */
+    width: 100px;
+    height: 100px;
+    border: none; /* ללא גבול */
+    cursor: pointer; /* מחוון לעכבר */
+    background-color: transparent; /* אם רוצים רקע שקוף */
+    background-size: contain; /* Adjust this to 'cover' if you want to fill the area while maintaining aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.answer{
+    -webkit-animation: raections 2s ;
+}
+@-webkit-keyframes raections {
+    50% {
+        font-size: 200px;
+        top: 10%;
+        font-family:Wide Latin;
+    }
+  
+        from {color:black ;}
+        to {color: red;}
+    
+}
+.finish{
+    position: absolute;
+    left: 22%;
+    right: 22%;
+    top: 10%;
+    font-size: 100px;
+    font-family:Wide Latin ;
+    -webkit-animation: finishGame 2s ;
+    
+    }
+    
+    @-webkit-keyframes finishGame {
+        50% {
+            font-size: 200px;
+            top: 10%;
+            font-family:Wide Latin;
+        }
+    }
+    @media (max-width: 768px) {
+        #circle1, #circle2 {
+            width: 300px;
+            height: 300px;
+        }
+    
+        .difficulty-btn {
+            font-size: 14px;
+            padding: 8px 10px;
+        }
+    
+        h1 {
+            font-size: 24px;
+        }
+    
+        .timer h2 {
+            font-size: 18px;
+        }
+    
+        .p {
+            font-size: medium;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #circle1, #circle2 {
+            width: 200px;
+            height: 200px;
+        }
+    
+        .difficulty-btn {
+            font-size: 12px;
+            padding: 6px 8px;
+        }
+    
+        h1 {
+            font-size: 20px;
+        }
+    
+        .timer h2 {
+            font-size: 16px;
+        }
+    
+        .p {
+            font-size: small;
+        }
+    }

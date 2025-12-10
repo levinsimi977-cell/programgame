@@ -1,0 +1,15 @@
+.card{
+    width: 250px;
+    height: 250px;
+    background-image: url('./images/card.png');
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+margin: 30px;;
+}
+.board{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    justify-content: space-around;
+}

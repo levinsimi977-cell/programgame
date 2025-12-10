@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .gameDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .game {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .B{
+    background-color: #b85cb0;
+  }
+  .G {
+      background-color: #4cae4c;
+  }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Game with Colors</title>
+    <link rel="stylesheet" href="../boolPgia/boolpgia.css">
+    <script src="../boolPgia/boolpgia.js" defer></script>
+</head>
+
+<body  onload="startGame()"> 
+    <div class="game-container">
+        <h1>בול פגיעה</h1>
+      
+        <div class="color-palette">
+            <div onclick="select(event)" class="color" data-color="red" style="background-color: red;"></div>
+            <div onclick="select(event)" class="color" data-color="blue" style="background-color: blue;"></div>
+            <div onclick="select(event)" class="color" data-color="green" style="background-color: green;"></div>
+            <div onclick="select(event)" class="color" data-color="yellow" style="background-color: yellow;"></div>
+            <div onclick="select(event)" class="color" data-color="orange" style="background-color: orange;"></div>
+            <div onclick="select(event)" class="color" data-color="purple" style="background-color: purple;"></div>
+            <div onclick="select(event)" class="color" data-color="brown" style="background-color: brown;"></div>
+            <div onclick="select(event)" class="color" data-color="pink" style="background-color: pink;"></div>
+        </div>
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+           
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div> 
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+
+        </div>
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+      
+        <div class="game-board" id="game-board"></div>
+        <div class="current-guess">
+            <div class="guess-color" id="guess1"></div>
+            <div class="guess-color" id="guess2"></div>
+            <div class="guess-color" id="guess3"></div>
+            <div class="guess-color" id="guess4"></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+            <div class="result-color "></div>
+        </div>
+       <div class="select-guess" >
+            <div class="guess-color"></div>
+            <div class="guess-color"></div>
+            <div class="guess-color"></div>
+            <div class="guess-color"></div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
